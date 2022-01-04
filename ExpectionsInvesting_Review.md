@@ -58,17 +58,6 @@ Investors typically know last year's EPS or next year's consensus EPS estimate, 
 ![EPS Shortcomings](/EPS_Fallacy.png "EPS Shortcomings")
 Reported earnings growth, even when accompanied by increases in shareholder value, can trigger reduced investor expecations and a fall in the stock price. 
 
-
-
-
-
-
-
-
-
-
-
-
 ## Chapter 2: How the Market Values Stocks
 **Compounding**: dollar today is worth more than dollar in the future because you can invest today's dollar and earn a positive rate of return. 
 
@@ -80,3 +69,13 @@ Reported earnings growth, even when accompanied by increases in shareholder valu
 **Bond Prices**: present value of the contractual cash flows discounted at the current expected rare of return. The market sets prices so that expected returns match the perceived risk. 
 
 > Whereas bonds contractually specify cash flows and date when principal is to be repaid, stocks have uncertain cash flows, an indefinite life, and no provision for repayment. That greater uncertainty makes stocks more difficult to value than bonds. 
+
+> Purpose of any stock market, is simply to provide liquidity for stocks in return for the promise of future cash flows, enabling investors to realize the present value of a future stream of income at any time.
+
+- Market prices respond to changes in a company's prospectus for cash flow. 
+- Market prices reflect cash flows well into the future. 
+- Companies often need 10-20 years(for more competitive industries) of value creating cash flows to justify their stock price
+
+> Static measures of near-term (~3-5 years) don't capture future performance and ultimately let investors down, especially in a global economy marked by spirited compeition and disruptive technologies. An investor cannot convincingly conclude that a stock is undervalues or overvalued without assessing a company's future cash flows.
+
+![Shareholder Map](/Shareholder_ValueMap.png "Shareholder Map")
