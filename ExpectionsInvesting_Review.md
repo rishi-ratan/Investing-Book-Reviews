@@ -1,4 +1,4 @@
-# Expectations Investing Summary
+# Expectations Investing [Michael Mauboussin] Summary
 ## Key Shifts in the market since 2001
 - **Shift from *active to passive* investing**: Index funds and ETFs are the prominent investment asset classes rather than stock picking. 
 - **Rise of intangible investments**: Companies today invest substantially more in intangible assets because they appear on the income statement as an *expense*, while tangible investments are recorded as assets on the balance sheet. 
