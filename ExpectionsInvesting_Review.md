@@ -118,9 +118,13 @@ Four ways to estimate terminal value:
 - perpetuity growth with partial inflation:
 - perpetuity with decline:
 
+![TV](/TV.png "TV")
+
 > First three methods assume that the company can sustain its NOPAT at the end of the forecast period and that future investments don't create any value i.e. the company will no longer grow and additional growth will not add to shareholder value. 
 
 > Conversely, the perpetuity with decline method assumes that the NOPAT will decline as the industry enters secular decline. 
+
+
 
 Weighted Average Cost of Capital (WACC) is the appropriate rate for discounting free cash flows. 
 - Cost of capital incorporates the expected returns of both debtholders and shareholders since both groups have claims on free cash flow, which is calculated before interest expense. 
