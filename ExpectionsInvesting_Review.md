@@ -97,3 +97,15 @@ Value determinant:
 
 ![FCF](/FCF.png "FCF")
 
+- Because we want to calculate FCF, we exclude the amortization of acquired intangible assets, which is a non-cash expense. 
+- Embedded interest in lease expense is also excluded since that is considered a financing cost
+- Depreciation expense remains as part of the OPM even though its a noncash item. But it is deducted from the CapEx so that the FCF is truly a cash figure. 
+- Tax expense in the income statement, book taxes, is often greater than the actual payments, or cash taxes, during a given period. This is because companies can recognize some revenue and expense items at different times for book versus tax purposes. 
+- Company might use an accelerated depreciation for tax purposes such that the result is higher than straight-line depreciation, thereby, increasing the company's expenses and reducing its cash tax bill. This results in a deferred tax asset.
+- Stock based compensation (SBC) can also create timing differences between cash and reported taxes. As a result, cash tax rates are commonly lower than book tax rates. 
+- Cash tax rate represents taxes payable on operating profit,**not** on pre-tax income. Therefore, to calculate the taxes that a company would pay if it were entirely equity financed, we must remove the tax effects of interest expense and non-operating income 
+
+
+
+
+
