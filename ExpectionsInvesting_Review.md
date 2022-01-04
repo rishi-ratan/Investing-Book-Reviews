@@ -130,6 +130,14 @@ Weighted Average Cost of Capital (WACC) is the appropriate rate for discounting 
 ERP = Beta x MRP.
 - Beta coefficent measures how sensistive a stock's return is to the overall market movements. Market portfolio beta = 1. Stocks with beta > 1 are volatile and risky while stocks with beta < 1 are stable and safe. 
 - MRP = Expected Rate of Return - Risk free rate. MRP measures the additional return that investors expect for holding a well-diversified portfolio of stocks rather than risk-free government debt securities. 
+>Investors should base the market risk premium on expected rates of return, not on historical rates since MRPs vary over time. 
 
+> Economic theory and empirical results show that companies that generate excess returns attract competition that eventually drives returns toward the cost of capital. 
 
+> Market prices do reflect long-term cash flow expectations. In fact, historical prices in the stock market suggest a market-implied forecast period b/w 5-15 years. 
 
+> In general, more stable and mature companies require a small amount of cash reserve on their BS, typically 1% of sales, while less stable and young companies require an amount closer to 5-10 % of sales. 
+
+> Debt subtracted from Total Enterprise Value (TEV) includes short-term, long-term bonds, preferred stock, and unfunded pension plans. 
+
+![FCF_forecast](/FCF_forecast.png "FCF forecast")
