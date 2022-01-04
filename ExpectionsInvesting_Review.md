@@ -55,6 +55,13 @@ Investors typically know last year's EPS or next year's consensus EPS estimate, 
 
 > P/E multiple does not determine value but rather derives from value. Price-earnings analysis is snot an analytical shortcut. Its an economic cul-de-sac. 
 
+![EPS Shortcomings](/Users/rishiratan/OneDrive/Learning/Hedge Funds Investing/Investing-Book-Reviews/EPS_Fallacy.png)
+
+
+
+
+
+
 
 
 
