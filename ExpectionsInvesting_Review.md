@@ -103,7 +103,9 @@ Value determinant:
 - Tax expense in the income statement, book taxes, is often greater than the actual payments, or cash taxes, during a given period. This is because companies can recognize some revenue and expense items at different times for book versus tax purposes. 
 - Company might use an accelerated depreciation for tax purposes such that the result is higher than straight-line depreciation, thereby, increasing the company's expenses and reducing its cash tax bill. This results in a deferred tax asset.
 - Stock based compensation (SBC) can also create timing differences between cash and reported taxes. As a result, cash tax rates are commonly lower than book tax rates. 
-- Cash tax rate represents taxes payable on operating profit,**not** on pre-tax income. Therefore, to calculate the taxes that a company would pay if it were entirely equity financed, we must remove the tax effects of interest expense and non-operating income 
+- Cash tax rate represents taxes payable on operating profit, **not** on pre-tax income. Therefore, to calculate the taxes that a company would pay if it were entirely equity financed, we must remove the tax effects of interest expense and non-operating income or expenses. 
+> Removing the tax benefit of interest expense deductions, interest expense x tax rate, increases the cash tax bill, and removing the taxes on operating profit. 
+
 
 
 
