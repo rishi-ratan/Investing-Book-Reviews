@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ExpectionsInvesting_Review.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="expectations-investing-michael-mauboussin-summary">Expectations Investing [Michael Mauboussin] Summary</h1>
+<h2 id="key-shifts-in-the-market-since-2001">Key Shifts in the market since 2001</h2>
+<ul>
+<li><strong>Shift from <em>active to passive</em> investing</strong>: Index funds and ETFs are the prominent investment asset classes rather than stock picking.</li>
+<li><strong>Rise of intangible investments</strong>: Companies today invest substantially more in intangible assets because they appear on the income statement as an <em>expense</em>, while tangible investments are recorded as assets on the balance sheet.</li>
+<li><strong>Shift from Public to Private Equity</strong>: There are ~1/3 fewer public companies listed in the US today compared to 2001. VC an PE have become the new preferred asset classes for investors and operators are staying private longer to avoid scrutiny endured in the public markets.</li>
+<li><strong>Changes in Accounting Rules</strong>: In the 1990s, stock-based compensation (SBC) consisted primarily of employee stock options (ESOPs) that were <em>not</em> expensed on the income statement. Today, SBC is primarily in the form of restricted stock units (RSUs) that are expensed on the income statement. Therefore, both the form of renumeration and how it is accounted for have changed. Furthermore, the accounting rules for M&amp;A have revised <em>ending</em> the pooling-of-interests method and <em>eliminating</em> goodwill amortization.</li>
+</ul>
+<h2 id="chapter-1-case-for-expectations-investing">Chapter 1: Case for Expectations Investing</h2>
+<p>Stock prices are the <strong>clearest</strong> and most <strong>reliable</strong> signal of the market's expectations about a company's future financial performance.</p>
+<blockquote>
+<p>The key to successful investing is to estimate the level of expected performance embedded in the current stock price and then assess the likelihood of a revision in expectations.</p>
+</blockquote>
+<p><strong>Growth money manager</strong> looks for well-managed companies with <em>rapid earnings growth</em> that trade at <strong>reasonable</strong> <em>price-to-earnings (P/E)</em> multiples. Bet here is on the company's future growth prospects.</p>
+<p><strong>Value manager</strong> extols the virtues of buying quality companies at <strong>low</strong> price-to-earnings (P/E) multiples. Bet here is that the market is underestimating the company's intrinsic worth.</p>
+<p>Short-term earnings are not very helpful for gauging expectations because they are a <strong>poor proxy</strong> for how the market values stocks.</p>
+<blockquote>
+<p>Ability to properly read market expectations and anticipate revisions of these expectations is the springboard for earning super long-term results. Stock prices express the collective expectations of investors, and changes in those expectations determine investment success.</p>
+</blockquote>
+<blockquote>
+<p>Expectations investing ias a stock-selection process that uses the market's own pricing mechanism, the discounted-cash-flow (DCF) model, with an important twist: Rather than forecast cash flows, expectations investing starts by reading the expectations implied by a company's current stock price.</p>
+</blockquote>
+<p>~2/3 of the active managers who run hedge funds consisting of large-capitalization (large-cap) stocks <strong>lag behind</strong> the S&amp;P500 index in an average year, and close to 90% underperform over a 10 year period.</p>
+<p>Investment performance is a <strong>zero-sum</strong> game before <strong>fees</strong> because the gains of investors who beat the market are offset by the losses of investors who underperform the market.</p>
+<blockquote>
+<p>The standard deviation of excess returns, which measures the difference between the results of the best and worst managers, has narrowed since the 1970s.</p>
+</blockquote>
+<p>The asset-weighted expense ratio for actively managed US equity mutual funds averages <strong>0.68%</strong> of the asset value. In contrast, the equivalent expense ratio for passive funds is <strong>0.09%</strong> of the asset value.</p>
+<blockquote>
+<p>The inability to sustain pain in the short term can affect the opportunity to achieve superior gains in the long-term.</p>
+</blockquote>
+<h3 id="expectations-investing-process">Expectations Investing Process</h3>
+<p><strong>Step 1 -  Estimate Price-Implied Expectations</strong>: Long-term DCF model is the right tool to read expectations because it mirrors the way the market prices stocks.</p>
+<p><strong>Step 2 - Identify Expectations Opportunities</strong>: Determine whether the stock price is most sensitive to revisions in the company's sales, operating costs, or investment needs.</p>
+<p><strong>Step 3 - Buy, Sell, Hold?</strong>: Prospective buys must offer clear-cut &quot;margin of safety,&quot; a sufficient discount to expected value so as to compensate for the potential of analytical mistakes or bad luck. Similarly, a sell candidate must trade at a sufficient premium to its expected value.</p>
+<h3 id="three-pervasive-misconceptions-in-traditional-investing">Three pervasive misconceptions in Traditional Investing</h3>
+<p><strong>Market takes a short-term view</strong>: Market doesn't react mechanically to short-term reported earnings, instead it uses unexpected earnings results, and increasingly management's guidance about future earnings, as a <em>signal to revise</em> expectations for a company's future cash flows when appropriate. If the market interprets dissapointing earnings or guidance as a sign of a downturn over the long-term, it sends the stock price lower and vice-versa.</p>
+<blockquote>
+<p>Shareholders of a company with a stock price that fully anticipates its performance should expect to earn a market-required rate of return. Investors need to extend expected cash flows over many years (often above &gt;10) to justift stock prices.</p>
+</blockquote>
+<p><strong>Earnings per share (EPS) dictate value</strong>: Earnings exclude (1) a charge for the cost of capital, (2) the incremental investments in working capital and fixed capital needed to support a company's growth, and (3) earnings calculations ignore the opportunity cost and time-value-of-money.</p>
+<blockquote>
+<p>When a company invests in a project, it must compare its return to those of alternative, equally risky investment opportunities. This opportunity cost, or cost of capital, is the discount rate for the discounted cash flow model.</p>
+</blockquote>
+<blockquote>
+<p>Earnings don't recognize the cash outflows for investments in future growth, such as increases in accounts receivables, inventory, and fixed assets.</p>
+</blockquote>
+<blockquote>
+<p>DCF models, in contrast, incorporate all cahs inflows and outflows.</p>
+</blockquote>
+<blockquote>
+<p>Revenue recognition and matching expenses with revenue are thr two fundamental steps that determine earnings.</p>
+</blockquote>
+<p><strong>Price-earnings multiples determine value</strong>: Investment community's favorite metric that measures what investors will pay for a stock.</p>
+<blockquote>
+<p>Shareholder value per share = EPS x P/E</p>
+</blockquote>
+<p>Investors typically know last year's EPS or next year's consensus EPS estimate, they typically only need to estimate the appropriate P/E multiple. But since E (earnings) are also known, the only unknown is P (price). Thus, there is a tautology: to estimate value, you need an estimate of value.</p>
+<blockquote>
+<p>P/E multiple does not determine value but rather derives from value. Price-earnings analysis is snot an analytical shortcut. Its an economic cul-de-sac.</p>
+</blockquote>
+<p><img src="/EPS_Fallacy.png" alt="EPS Shortcomings" title="EPS Shortcomings">
+Reported earnings growth, even when accompanied by increases in shareholder value, can trigger reduced investor expecations and a fall in the stock price.</p>
+<h2 id="chapter-2-how-the-market-values-stocks">Chapter 2: How the Market Values Stocks</h2>
+<p><strong>Compounding</strong>: dollar today is worth more than dollar in the future because you can invest today's dollar and earn a positive rate of return.</p>
+<p><strong>Discounting</strong>: future cash flow is converted into its equivalent present value. Discounting is the opposite of compounding.</p>
+<p><strong>Present Value</strong>: an asset's present value = sum of its expected cash flows discounted by an expected rate of return. Maximum price an investor should pay for an asset.
+<strong>return</strong>: what investors anticipate earning on assets with similar risk.</p>
+<p><strong>Bond Prices</strong>: present value of the contractual cash flows discounted at the current expected rare of return. The market sets prices so that expected returns match the perceived risk.</p>
+<blockquote>
+<p>Whereas bonds contractually specify cash flows and date when principal is to be repaid, stocks have uncertain cash flows, an indefinite life, and no provision for repayment. That greater uncertainty makes stocks more difficult to value than bonds.</p>
+</blockquote>
+<blockquote>
+<p>Purpose of any stock market, is simply to provide liquidity for stocks in return for the promise of future cash flows, enabling investors to realize the present value of a future stream of income at any time.</p>
+</blockquote>
+<ul>
+<li>Market prices respond to changes in a company's prospectus for cash flow.</li>
+<li>Market prices reflect cash flows well into the future.</li>
+<li>Companies often need 10-20 years(for more competitive industries) of value creating cash flows to justify their stock price</li>
+</ul>
+<blockquote>
+<p>Static measures of near-term (~3-5 years) don't capture future performance and ultimately let investors down, especially in a global economy marked by spirited compeition and disruptive technologies. An investor cannot convincingly conclude that a stock is undervalues or overvalued without assessing a company's future cash flows.</p>
+</blockquote>
+<p><img src="/Shareholder_ValueMap.png" alt="Shareholder Map" title="Shareholder Map"></p>
+<ul>
+<li>Sales growth [g] and operating profit margin [OPM] determine operating profit</li>
+<li><strong>NOPAT</strong> = Operating profit (-) Cash Taxes</li>
+<li><strong>FCF</strong> = NOPAT - investments in WC and fixed assets. Thus, free cash flow is the pool of cash available to pay the claims of debtholders and shareholders.</li>
+<li><strong>Shareholder Value</strong> = Corporate Value + Non Operating Assets (-) Market Value of Debt and other relevant liabilities</li>
+</ul>
+<blockquote>
+<p>Expectations investing reverses the above descibed standard DCF model by starting with price, which may differ from value, and determines the expectations for cash flows that the price implies.</p>
+</blockquote>
+<p>Three operating value drivers:</p>
+<ul>
+<li>sales growth [g]</li>
+<li>operating profit margin [OPM]</li>
+<li>incremental investment rate [i]</li>
+</ul>
+<p>Value determinant:</p>
+<ul>
+<li>cash tax rate [T]</li>
+</ul>
+<p><img src="/FCF.png" alt="FCF" title="FCF"></p>
+<ul>
+<li>Because we want to calculate FCF, we exclude the amortization of acquired intangible assets, which is a non-cash expense.</li>
+<li>Embedded interest in lease expense is also excluded since that is considered a financing cost</li>
+<li>Depreciation expense remains as part of the OPM even though its a noncash item. But it is deducted from the CapEx so that the FCF is truly a cash figure.</li>
+<li>Tax expense in the income statement, book taxes, is often greater than the actual payments, or cash taxes, during a given period. This is because companies can recognize some revenue and expense items at different times for book versus tax purposes.</li>
+<li>Company might use an accelerated depreciation for tax purposes such that the result is higher than straight-line depreciation, thereby, increasing the company's expenses and reducing its cash tax bill. This results in a deferred tax asset.</li>
+<li>Stock based compensation (SBC) can also create timing differences between cash and reported taxes. As a result, cash tax rates are commonly lower than book tax rates.</li>
+<li>Cash tax rate represents taxes payable on operating profit, <strong>not</strong> on pre-tax income. Therefore, to calculate the taxes that a company would pay if it were entirely equity financed, we must remove the tax effects of interest expense and non-operating income or expenses.</li>
+</ul>
+<blockquote>
+<p>Removing the tax benefit of interest expense deductions, interest expense x tax rate, increases the cash tax bill, and removing the taxes on operating profit.</p>
+</blockquote>
+<ul>
+<li>Fixed capital investment includes CapEx and Depreciation expense. Rate of fixed capital investment required for the company to sustain its operations is calculated as a % of sales increase. i.e. (CapEx - Depreciation) / change in sales.</li>
+<li>As a business operating working capital generally grows proportionally.</li>
+<li>Inventories generally rise as sales increase and rising inventory requires cash payments for materials, labor, and overhead. Since COGS excludes cash outlays it has to be included in working capital calculation.</li>
+</ul>
+<blockquote>
+<p>Amazon is an unique company in that working capital is actually a source of cash instead of an outlay since the company receives cash from customers before it has to pay its suppliers.</p>
+</blockquote>
+<blockquote>
+<p>FCFs only represent a tiny fraction of the company's value as most of the value relies in residual value aka terminal value.</p>
+</blockquote>
+<p>Four ways to estimate terminal value:</p>
+<ul>
+<li>perpetuity growth:</li>
+<li>perpetuity growth with inflation:</li>
+<li>perpetuity growth with partial inflation:</li>
+<li>perpetuity with decline:</li>
+</ul>
+<p><img src="/TV.png" alt="TV" title="TV"></p>
+<blockquote>
+<p>First three methods assume that the company can sustain its NOPAT at the end of the forecast period and that future investments don't create any value i.e. the company will no longer grow and additional growth will not add to shareholder value.</p>
+</blockquote>
+<blockquote>
+<p>Conversely, the perpetuity with decline method assumes that the NOPAT will decline as the industry enters secular decline.</p>
+</blockquote>
+<p>Weighted Average Cost of Capital (WACC) is the appropriate rate for discounting free cash flows.</p>
+<ul>
+<li>Cost of capital incorporates the expected returns of both debtholders and shareholders since both groups have claims on free cash flow, which is calculated before interest expense.</li>
+<li>WACC considers each group's claims in proportion to the expected contribution to the financing of the company.</li>
+<li>Cost of debt (r<sub>D</sub>) = rate that a company would have to pay today on its long-term debt. After tax cost of debt = ytm x (1 - Tax rate).</li>
+<li>Cost of equity (r<sub>E</sub>)= r<sub>f</sub> + ERP.  Risk-free rate (r<sub>f</sub>) = default risk and is subject to interest-rate hikes from the central bank. Equity Risk Premium (ERP) = product of market risk premium for equity and an individual stock's systematic risk as a measured by its beta coefficient.
+ERP = Beta x MRP.</li>
+<li>Beta coefficent measures how sensistive a stock's return is to the overall market movements. Market portfolio beta = 1. Stocks with beta &gt; 1 are volatile and risky while stocks with beta &lt; 1 are stable and safe.</li>
+<li>MRP = Expected Rate of Return - Risk free rate. MRP measures the additional return that investors expect for holding a well-diversified portfolio of stocks rather than risk-free government debt securities.</li>
+</ul>
+<blockquote>
+<p>Investors should base the market risk premium on expected rates of return, not on historical rates since MRPs vary over time.</p>
+</blockquote>
+<blockquote>
+<p>Economic theory and empirical results show that companies that generate excess returns attract competition that eventually drives returns toward the cost of capital.</p>
+</blockquote>
+<blockquote>
+<p>Market prices do reflect long-term cash flow expectations. In fact, historical prices in the stock market suggest a market-implied forecast period b/w 5-15 years.</p>
+</blockquote>
+<blockquote>
+<p>In general, more stable and mature companies require a small amount of cash reserve on their BS, typically 1% of sales, while less stable and young companies require an amount closer to 5-10 % of sales.</p>
+</blockquote>
+<blockquote>
+<p>Debt subtracted from Total Enterprise Value (TEV) includes short-term, long-term bonds, preferred stock, and unfunded pension plans.</p>
+</blockquote>
+<p><img src="/FCF_forecast.png" alt="FCF_forecast" title="FCF forecast"></p>
+<h2 id="chapter-3-expectations-infrastructure">Chapter 3: Expectations Infrastructure</h2>
+<p>Operating value drivers are the logical first-principles places to start the search for expectations revisions.</p>
+<p>Operating value drivers [OVDs]:</p>
+<ul>
+<li>sales growth rate %</li>
+<li>operating profit margin %</li>
+<li>incremental investment rate %</li>
+</ul>
+<blockquote>
+<p>OVDs are the culminating effect, not the fundamental cause, of expectations revisions. Right place for expectations revisions is with the fundamental building blocks of shareholder value i.e. value triggers - sales, operating costs, and investments because they start the expectation revisions process.</p>
+</blockquote>
+<p>Value factors:</p>
+<ul>
+<li>volume</li>
+<li>price and mix</li>
+<li>operating leverage</li>
+<li>economies of scale</li>
+<li>cost efficiencies</li>
+<li>investment efficiencies</li>
+</ul>
+<p><img src="/Expectations_Infra.png" alt="Expectations_infra" title="Expectations infra"></p>
+
+</body>
+</html>
