@@ -145,3 +145,24 @@ ERP = Beta x MRP.
 > Debt subtracted from Total Enterprise Value (TEV) includes short-term, long-term bonds, preferred stock, and unfunded pension plans. 
 
 ![FCF_forecast](/FCF_forecast.png "FCF forecast")
+
+## Chapter 3: Expectations Infrastructure
+Operating value drivers are the logical first-principles places to start the search for expectations revisions. 
+
+Operating value drivers [OVDs]: 
+- sales growth rate %
+- operating profit margin %
+- incremental investment rate %
+
+>OVDs are the culminating effect, not the fundamental cause, of expectations revisions. Right place for expectations revisions is with the fundamental building blocks of shareholder value i.e. value triggers - sales, operating costs, and investments because they start the expectation revisions process. 
+
+Value factors: 
+- volume 
+- price and mix
+- operating leverage
+- economies of scale
+- cost efficiencies
+- investment efficiencies
+
+![Expectations_infra](/Expectations_Infra.png "Expectations infra")
+
