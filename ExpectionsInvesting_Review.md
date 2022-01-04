@@ -55,7 +55,7 @@ Investors typically know last year's EPS or next year's consensus EPS estimate, 
 
 > P/E multiple does not determine value but rather derives from value. Price-earnings analysis is snot an analytical shortcut. Its an economic cul-de-sac. 
 
-![EPS Shortcomings](/EPS_Fallacy.png "EPS Shortcomings")
+![EPS Shortcomings](/imgs/EPS_Fallacy.png "EPS Shortcomings")
 Reported earnings growth, even when accompanied by increases in shareholder value, can trigger reduced investor expecations and a fall in the stock price. 
 
 ## Chapter 2: How the Market Values Stocks
@@ -78,7 +78,7 @@ Reported earnings growth, even when accompanied by increases in shareholder valu
 
 > Static measures of near-term (~3-5 years) don't capture future performance and ultimately let investors down, especially in a global economy marked by spirited compeition and disruptive technologies. An investor cannot convincingly conclude that a stock is undervalues or overvalued without assessing a company's future cash flows.
 
-![Shareholder Map](/Shareholder_ValueMap.png "Shareholder Map")
+![Shareholder Map](/imgs/Shareholder_ValueMap.png "Shareholder Map")
 
 - Sales growth [g] and operating profit margin [OPM] determine operating profit
 - **NOPAT** = Operating profit (-) Cash Taxes
@@ -95,7 +95,7 @@ Three operating value drivers:
 Value determinant: 
 - cash tax rate [T]
 
-![FCF](/FCF.png "FCF")
+![FCF](/imgs/FCF.png "FCF")
 
 - Because we want to calculate FCF, we exclude the amortization of acquired intangible assets, which is a non-cash expense. 
 - Embedded interest in lease expense is also excluded since that is considered a financing cost
@@ -118,7 +118,7 @@ Four ways to estimate terminal value:
 - perpetuity growth with partial inflation:
 - perpetuity with decline:
 
-![TV](/TV.png "TV")
+![TV](/imgs/TV.png "TV")
 
 > First three methods assume that the company can sustain its NOPAT at the end of the forecast period and that future investments don't create any value i.e. the company will no longer grow and additional growth will not add to shareholder value. 
 
@@ -144,7 +144,7 @@ ERP = Beta x MRP.
 
 > Debt subtracted from Total Enterprise Value (TEV) includes short-term, long-term bonds, preferred stock, and unfunded pension plans. 
 
-![FCF_forecast](/FCF_forecast.png "FCF forecast")
+![FCF_forecast](/imgs/FCF_forecast.png "FCF forecast")
 
 ## Chapter 3: Expectations Infrastructure
 Operating value drivers are the logical first-principles places to start the search for expectations revisions. 
@@ -164,5 +164,5 @@ Value factors:
 - cost efficiencies
 - investment efficiencies
 
-![Expectations_infra](/Expectations_Infra.png "Expectations infra")
+![Expectations_infra](/imgs/Expectations_Infra.png "Expectations infra")
 
