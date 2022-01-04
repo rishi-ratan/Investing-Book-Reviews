@@ -105,9 +105,31 @@ Value determinant:
 - Stock based compensation (SBC) can also create timing differences between cash and reported taxes. As a result, cash tax rates are commonly lower than book tax rates. 
 - Cash tax rate represents taxes payable on operating profit, **not** on pre-tax income. Therefore, to calculate the taxes that a company would pay if it were entirely equity financed, we must remove the tax effects of interest expense and non-operating income or expenses. 
 > Removing the tax benefit of interest expense deductions, interest expense x tax rate, increases the cash tax bill, and removing the taxes on operating profit. 
+- Fixed capital investment includes CapEx and Depreciation expense. Rate of fixed capital investment required for the company to sustain its operations is calculated as a % of sales increase. i.e. (CapEx - Depreciation) / change in sales. 
+- As a business operating working capital generally grows proportionally. 
+- Inventories generally rise as sales increase and rising inventory requires cash payments for materials, labor, and overhead. Since COGS excludes cash outlays it has to be included in working capital calculation. 
+> Amazon is an unique company in that working capital is actually a source of cash instead of an outlay since the company receives cash from customers before it has to pay its suppliers. 
 
+> FCFs only represent a tiny fraction of the company's value as most of the value relies in residual value aka terminal value. 
 
+Four ways to estimate terminal value: 
+- perpetuity growth: 
+- perpetuity growth with inflation:
+- perpetuity growth with partial inflation:
+- perpetuity with decline:
 
+> First three methods assume that the company can sustain its NOPAT at the end of the forecast period and that future investments don't create any value i.e. the company will no longer grow and additional growth will not add to shareholder value. 
+
+> Conversely, the perpetuity with decline method assumes that the NOPAT will decline as the industry enters secular decline. 
+
+Weighted Average Cost of Capital (WACC) is the appropriate rate for discounting free cash flows. 
+- Cost of capital incorporates the expected returns of both debtholders and shareholders since both groups have claims on free cash flow, which is calculated before interest expense. 
+- WACC considers each group's claims in proportion to the expected contribution to the financing of the company.
+- Cost of debt (r<sub>D</sub>) = rate that a company would have to pay today on its long-term debt. After tax cost of debt = ytm x (1 - Tax rate). 
+- Cost of equity (r<sub>E</sub>)= r<sub>f</sub> + ERP.  Risk-free rate (r<sub>f</sub>) = default risk and is subject to interest-rate hikes from the central bank. Equity Risk Premium (ERP) = product of market risk premium for equity and an individual stock's systematic risk as a measured by its beta coefficient. 
+ERP = Beta x MRP.
+- Beta coefficent measures how sensistive a stock's return is to the overall market movements. Market portfolio beta = 1. Stocks with beta > 1 are volatile and risky while stocks with beta < 1 are stable and safe. 
+- MRP = Expected Rate of Return - Risk free rate. MRP measures the additional return that investors expect for holding a well-diversified portfolio of stocks rather than risk-free government debt securities. 
 
 
 
