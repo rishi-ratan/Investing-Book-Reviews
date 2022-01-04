@@ -49,7 +49,7 @@ The asset-weighted expense ratio for actively managed US equity mutual funds ave
 > Revenue recognition and matching expenses with revenue are thr two fundamental steps that determine earnings. 
 
 **Price-earnings multiples determine value**: Investment community's favorite metric that measures what investors will pay for a stock. 
-> Shareholder value per share = EPS x P/
+> Shareholder value per share = EPS x P/E
 
 Investors typically know last year's EPS or next year's consensus EPS estimate, they typically only need to estimate the appropriate P/E multiple. But since E (earnings) are also known, the only unknown is P (price). Thus, there is a tautology: to estimate value, you need an estimate of value. 
 
