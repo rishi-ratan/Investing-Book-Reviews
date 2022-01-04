@@ -56,6 +56,7 @@ Investors typically know last year's EPS or next year's consensus EPS estimate, 
 > P/E multiple does not determine value but rather derives from value. Price-earnings analysis is snot an analytical shortcut. Its an economic cul-de-sac. 
 
 ![EPS Shortcomings](/EPS_Fallacy.png "EPS Shortcomings")
+Reported earnings growth, even when accompanied by increases in shareholder value, can trigger reduced investor expecations and a fall in the stock price. 
 
 
 
@@ -67,3 +68,15 @@ Investors typically know last year's EPS or next year's consensus EPS estimate, 
 
 
 
+
+## Chapter 2: How the Market Values Stocks
+**Compounding**: dollar today is worth more than dollar in the future because you can invest today's dollar and earn a positive rate of return. 
+
+**Discounting**: future cash flow is converted into its equivalent present value. Discounting is the opposite of compounding. 
+
+**Present Value**: an asset's present value = sum of its expected cash flows discounted by an expected rate of return. Maximum price an investor should pay for an asset. 
+**return**: what investors anticipate earning on assets with similar risk. 
+
+**Bond Prices**: present value of the contractual cash flows discounted at the current expected rare of return. The market sets prices so that expected returns match the perceived risk. 
+
+> Whereas bonds contractually specify cash flows and date when principal is to be repaid, stocks have uncertain cash flows, an indefinite life, and no provision for repayment. That greater uncertainty makes stocks more difficult to value than bonds. 
