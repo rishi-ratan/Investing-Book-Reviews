@@ -79,3 +79,21 @@ Reported earnings growth, even when accompanied by increases in shareholder valu
 > Static measures of near-term (~3-5 years) don't capture future performance and ultimately let investors down, especially in a global economy marked by spirited compeition and disruptive technologies. An investor cannot convincingly conclude that a stock is undervalues or overvalued without assessing a company's future cash flows.
 
 ![Shareholder Map](/Shareholder_ValueMap.png "Shareholder Map")
+
+- Sales growth [g] and operating profit margin [OPM] determine operating profit
+- **NOPAT** = Operating profit (-) Cash Taxes
+- **FCF** = NOPAT - investments in WC and fixed assets. Thus, free cash flow is the pool of cash available to pay the claims of debtholders and shareholders. 
+- **Shareholder Value** = Corporate Value + Non Operating Assets (-) Market Value of Debt and other relevant liabilities
+
+> Expectations investing reverses the above descibed standard DCF model by starting with price, which may differ from value, and determines the expectations for cash flows that the price implies. 
+
+Three operating value drivers: 
+- sales growth [g]
+- operating profit margin [OPM]
+- incremental investment rate [i]
+
+Value determinant: 
+- cash tax rate [T]
+
+![FCF](/FCF.png "FCF")
+
